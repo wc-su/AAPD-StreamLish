@@ -1,0 +1,1 @@
+/* empty css            */import{T as t}from"./bootstrap.esm-pHIF-KX_.js";console.log("Hello world");document.addEventListener("DOMContentLoaded",()=>{const o=window.location.hash;if(o){const e=document.querySelector(`a[href="${o}"]`);e&&new t(e).show(),history.replaceState(null,null,window.location.pathname)}});

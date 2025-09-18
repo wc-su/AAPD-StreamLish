@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-pro-display">
+    <title>影片資訊-集數</title>
+    <script type="module" crossorigin src="/AAPD-StreamLish/assets/index-DdMuGOvR.js"></script>
+    <script type="module" crossorigin src="/AAPD-StreamLish/assets/bootstrap.esm-pHIF-KX_.js"></script>
+    <script type="module" crossorigin src="/AAPD-StreamLish/assets/main-BXktTT-d.js"></script>
+    <link rel="stylesheet" crossorigin href="/AAPD-StreamLish/assets/all-Qb0mTUN8.css">
+  </head>
+  <body class="bg-black">
+
+  <!-- 預覽圖片  -->
+  <div class="card bg-dark border-0 rounded-2 overflow-hidden mb-8">
+    <div class="position-relative">
+      <!-- 圖片 -->
+      <img src="/AAPD-StreamLish/assets/friends9-D6xdVJJv.png" class="w-100 h-100 object-fit-cover" alt="friends9">
+
+      <!-- 播放進度條 (放在圖片上) -->
+      <div class="position-absolute bottom-0 start-0 w-100">
+        <div class="progress" style="height: 6px; background-color: rgba(255,255,255,0.3);">
+          <div class="progress-bar" role="progressbar" style="width: 30%; background-color: white;"></div>
+        </div>
+      </div>
+
+      <!-- 右上角：投放 & 關閉 -->
+      <div class="position-absolute top-0 end-0 mt-5 me-6 d-flex gap-2">
+        <span class="material-icons-outlined text-white bg-dark bg-opacity-50 rounded-circle p-1">cast</span>
+        <a href="StreamLish.html" class="text-white text-decoration-none">
+          <span class="material-icons-outlined text-white bg-dark bg-opacity-50 rounded-circle p-1">close</span>
+        </a>
+      </div>
+
+      <!-- 右下角：音量 -->
+      <div class="position-absolute bottom-0 end-0 m-6">
+        <span class="material-icons-outlined text-white bg-dark bg-opacity-50 rounded-circle p-1">volume_up</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bottom-padding">
+    <!-- 劇名與資訊 -->
+    <div class="mb-8">
+      <div class="d-flex align-items-center mb-1">
+        <h4 class="fw-bold mb-2 text-white fs-5">六人行</h4>
+        <img class="ms-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHPSURBVHgB7Va/T8JQEL6WkqZNQWgTWFwZxcFEHXV0ZeZvcPVvYHXVkRVWVtc6suIIAyQWoaRNCwW/w5IgCPIjlJj4JZd3x3u973333pUKFGIymWgYVFiMDocPQRBcdoSQ9BRDlqJBG+RNCaSZCEkZWXD6IpwMRY8ME8sUPWSRjoS/Rex5nj4ajRTaA9KqiV6vV0DyW1x9U9f1Mv+GWLdtuzgej3PhsndFUZ5VVW3SllhSzEq63e79cDg8R+jOzzFpEAQGyEps/DKA+sJijk0q8lOp+YGWpmklURSd+Yl4PG5C3RMrZJMkqYmeXCJwHKcIu6E1WCo1klnpdLrCvut+E0zYjMlKkPQSowH1OWymSjtAou2hoJTX7OCsaaZ4MBjkfN+/Yh9HwKXOW5ZlcJxMJisQ5O5FHFbkkf1+v3+Hu1AESZ03wIThhlThC/rKPLQhuMS4XA+xWKwGBWaobKoCSo1EIlGHy0Z8ObGugXW1vYm5VCB6Y4VInIdCJj2DtXZpJ+kXshcM1ixOpVJlnGUDCqd9jItVg70uPifLchWK3XW5Bez8go6A/z+JSIk9ih7TT58ORY+2iN7sREzeYU5hFqGt+Jv6hA6HAMYvIZuDT9QD0pRFotQKAAAAAElFTkSuQmCC" alt="13+" height="24">
+      </div>
+      
+      <div class="d-flex align-items-center mb-3 text-netural-400 fs-10">
+        <span class="material-icons-outlined me-1 small">star</span>
+        <p>95%</p>
+        <img class="mx-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABESURBVHgBLcoxFYAwEATR2XsIOIdowEFwkJYSDwhCwhlIlhRMNcXXdT/7lLvsEtE2QxMkUk7cw3LyJ1zB8LH2XbI8OD9Iaxg/HUVAhgAAAABJRU5ErkJggg==" alt="div" height="4">
+        <p>1994</p>
+        <img class="mx-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABESURBVHgBLcoxFYAwEATR2XsIOIdowEFwkJYSDwhCwhlIlhRMNcXXdT/7lLvsEtE2QxMkUk7cw3LyJ1zB8LH2XbI8OD9Iaxg/HUVAhgAAAABJRU5ErkJggg==" alt="div" height="4">
+        <p>喜劇</p>
+      </div>
+  
+      <!-- 功能徽章 -->
+      <div class="d-flex flex-wrap gap-3 mb-4">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAYAAADkgu3FAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH1SURBVHgB3VY7b4JQFL4X8QE+0uCoQ5Pq0KVLh3Z01bGsrl39H/6GrvoXdHV11aSLk6kdReIDFEX7nQYaVFoZkKFfcnKvl++e77wwcAYcDocElluYBBNZeNBhH5xzizsi9yELeGHD3knoDpsbdl0shAhECLLAokEsKiEWmdCvk7bb7STDMCpY87FYzBBFcZROp4cnHGW1WlVs25aJk0qleslkUvPzR1P36COiLBaLxn6/l/EODGAK9uV4PN7J5XJd4pimWYK94j4nDo7K2CvgtMDpB8oImVQRJZckqYkspnQ2m83U7XZbw7OhLMuT9Xpdh/g6k8k0kYnhcBrgqNgGEwL5WRCEvitCyGazHTifIGpzs9kUIJJPJBItV4SAANq4W6Kyo9Tmn0JUtu8Hojg9IuIiou+7ZaMVwRz1A/2ZkjEf+E2dyQIC2UlBuWdCFDkinaJHZe85ZappWh09KqLhn45QwcvBAD0Qh0p35tdHnMR6lmWp8/m8ilIM0A8J5VJpCuG86wQzoOGAcxO9Io4CgRes/LQ/BN/xJui6XkNWVfc3eBqa/UYT52QoLZdLFZynn/IIwgiibe8QXRQiYMpkOCzgPdH8LgflXBQKE//vT5WEbBYBSMhg14dOQmN23azI94TTDpOXxFJk4X4/kABVa4zR33wBDH0c2IXvHLYAAAAASUVORK5CYII=" alt="CC" height="24">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAYCAYAAAB3JpoiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAURSURBVHgB7Zk7UBtXFIZXQjxWPAYkOpSZzMR4JgWkSCFKU9ollFEZ0gWXTklKt6QkpVyGElqls9IZz6RBjSdSqcW8tLwE+f6dvcxlvRICY42Z2TOzc/dx7rnn/Oc/515BykGurq6GGL7lcrkyTiIPLR+5/kulUmepEOzvnQToLy1trn8F+HfcTDqJ9EMO004Cdj8lm3YS6acMJID3WT7ZKJvN5h8a2VHrmUymMjExUY3qHB0dFc/Pz4uXl5ezes7n87/ac41go5VOp3dc190eHh72nB7k4ODgObZfoL8+Nja2K5vYqeZyubJzRzk8PHzGHuUSw3bMOj8x1LDtDgwM1LLZbL2Tnb29vZXx8fEyePjOZ0pHhuNogcBLnueV7Pf7+/tLp6enJQN2zDxvcHBwSxdgv2+32wsk6LdWq1Vw+iwkunp2drYQ943YvgnJ5OFzVyABuvoQYAe2blPAmSJs2JVzYvbFxcViN33Y0rQZxZwqCVrlWoJF6+b98fHxHLZmYZgPm6u3VQDzZ05OToq2vmzo2+jo6HvbLon2AbsmkOQPPsyqWiyfZCdg9NDQUB2dAEz8cUnQXBhHzfiETtP2xff9J+CSw4andcxcyJVjnicbSqLtl5GeejiGihrVRpw7igIFgF1VhJzSO6rmFeD9gl29UwX8TvnPd7JBYDl0XmJjXu2GeyUwR2CLsmPsMub0DCDXrKbStllnzraHjXlADFolui+YU9BciLWKbpZ1UiTupRIlHapzJbTvynfWfiodxgVVfGhzBr1l4lD1p3j+gXa4Fo2lJ8BN+2C8V1sQEzQSjCt2qV3Bvk368mtYINb7gFfqtv7IyMjrqampNVinXp4HpGcCU98JNEgW7wI/DZgSJVzB20nBj4LNeAk6AWPp1RW+VVlvQxVo62B/Xm1ycnJySzqMZWFiEoPdPD5umG/oeuabkV5PKUHJYaDl3EO0cZl7EwRAv9UIgE3A170r1sbN18aLflDWCkb+KNAQNN/YFHO1h0TBJAFv7aTwvBVdg+Q1sJnXRqv2pU1UwNo6qnDm7kTmVZn3JPTzxrq0F1X2jZh6AtwYggE1534yw+V36tPqy90md9vUlCy+B2CqEqJBS3hXs9ui+nOMHZ9EbcgXZJGTyWpcm2PuvUh37UsvSmR1MxwrTsj2XkRlrB4n5hB0UOaMAVPVN41eCEbHhAhQ0xLEPgZXTNYzAGhjcnWc1Gi3EyOG8eFcx1SLLeG3K9MOYPgb2tySrYPvdd7daKshu3s68kpuO6X4LLJpHFSZAU4Zlixrl46boFIXO8I2kmPMinU6i4c2KoCzQIArgPiO73klBOC2OzmhVkbiXoUVFmyAJCfQF5jY8rWZxrWT60AzmR1tvLSAv+K+Mz8b7iMbSrxOGtGKpq//zWb6M+s10WnotILe0+np6Te6d3qQTwDXjwyNOFbn+odFbpQQm8oOCzZwUIvNxs0lcPNcU8+zQVDpaqPEwecCm1c+65TNDyzmNGRHRztjU70QHXNKks2KzVK1FR1X0XnndBCdyZlfiP6QY65OUb7IREIq9PoSV+A77zZDteB4p/2G4U/5jo4I18DueoiXh/3dCB6NaLvUXwt/dB6pqM2QfCV+WVUCOdbi2sXXJI/6byk6++rcrXsdM792sCWPmuGPUZK/FvZZBHjbSaRvIsA/6yCfyJ3kowD/4CQs74cI43pKd2ycwwz6BZX8f/PhRUCri3zgTH76P3xERG8mqjSnAAAAAElFTkSuQmCC" alt="Dolby Vision" height="24">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAYAAAALQIb7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHDSURBVHgBvVY7T8JQFL590FIeSVM2ZTARTFxcTMTVEUcc5Tcw+h9cnR1ZZZTfgKMmLrIQXS0PSUsLpX7H0ERr5NZC+yUn99xHz3fOPefeW4EBvu8raPYgGkRm28UI8ioIgiusiA4TIPkOD/JMZPtQdJY8PsSUiAg5kaUHKU2y30UxmUxqi8WigVzmWHy8K4rSKRaLj2vJPM+ro3lSVfWFxQScrbqu24R6tZZsuVyWMplMt1Ao9Khv23ZF07R+MB/0HcfZpS6cMsPrptMpOV0L2+bmbDabNWHYWHlsWJbVXBk/w3iV9PF43MC6c56tjQsEOb6EEweI6pa3NtKtgf0/wrZYkB9FM5/P65Ik9fP5/E02m7V4drhkuNMeYLQMIV0LTZdEUexFIYpEpuv6faBTzpCfVtBHed/BiZppmiXDMNo8WxvlDGfRBsk1omPD4bDFW/+vm16WZTMoBLRdRPo1jujbKPdqHDIbZ62CEvf/+ghzO9Qih6TTq8EoOugnpNP3iNrkkiEPbeThAufolMWHjSrthAfpPTtmKSHVW5/IPJYSiCzSgdwCRkQ2YMlHR/bfBNJQJCqaMtv+/wiR0M4NcEycT4n/za8grC/aAAAAAElFTkSuQmCC" alt="4K" height="24">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIBSURBVHgB3ZY7TwJBEMf3jufJIyDlUZgoJhbSmEAplFDiZ7D1w+Dn0BJaWlpMbKAhniWEV3gf+P/jkVyOI0AiWzjJZvb2Mb+Z2dkFRUDW67Uf6gpNQ/OKv5ce2peiKHPFgt2dCWQXE+2TwGt0YkKODFWJMMqFKuSKRzZQSAceVZn9fr+0XC7Tfr//Hbq0Wq0Sqqo2vV5vLRKJNLhmMBgUotFo1amdtg5GOBqNsoDk0U0sFos0YQC/cW4+nz/DcJZ9VLuGtSlrTwp3bjIcDtMnAQHSACkwGvs4oqrF4/EyxmuYf+I69Fumad5Tw5GspmkNjGdPAo7H4xwj8vl8Vbd5gCvbdQAYXBsMBg1Ee4N0d6EvjwbCu0t4X/R4PFUY6bitgdEJ5huILEkAgDrHmE7OQ2s7e/YBkf8XaniZQT+zbx3PTvy+wUeJK5CFYqWysjWK7/weGzrmW9Y5du0TiFw5CLRSWUA66tuy5hiuxg6QpW+d2yv26AAas9lMx94u9yDdnYNAFECBnqEIXAuFghTneC8BS/GMQ6FQBw49ov+BCuVYYzqdUtede1WXCG9xzyo0YhtmIRgw8M0PGC1SBwKBciwW26SdkYbD4Sb2p5CZOpzWqZ32+fP0ICTK/3+8CTSFRCFwLORJj8C2kBMlGcbmJUClBqCS4jz/bwhiFtu4WrMfPxofBpRti3gAAAAASUVORK5CYII=" alt="AD" height="24">
+      </div>
+    </div>
+  
+    <!-- 劇集描述 + 操作卡片 -->
+    <div class="mb-8">
+      <h6 class="fw-semibold mb-5 text-white fs-6">EP1 摩妮卡有新室友</h6>
+      <p class="small fw-light text-netural-400">
+        蕾秋在婚禮當天前離開未婚夫，搬進去和摩妮卡同住，卻發現沒老爸的信用卡借後盾，自力更生其實比想像中困難。
+      </p>  
+    </div>
+
+    <!-- 主播放按鈕 -->
+    <div class="d-grid mb-6">
+      <button class="btn btn-primary rounded-pill text-white" style="height: 50px" onclick="location.href='video.html'">
+        <img class="me-1 mb-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVHgBlZJRDYAwDEQLCpCABHCAFCTgACTgACs4QAI4QMLRJmtClmW7veQ+lrxsbW4CoLMIg4p3yMzIfy5Nz8rOWiMjjDawsnP4aI2dpMyjGVupgRhjh/eA/IITc/OGVKuRdKJQij33ahYhFqQ/0geR1Qospks9vgAAAABJRU5ErkJggg==" alt="Arrow right">
+        播放・第一季 EP1
+      </button>
+    </div>
+
+
+    <!-- 按鈕 -->
+    <div class="d-flex justify-content-around mb-8">
+      <!-- 分享 -->
+      <button type="button" class="btn btn-dark rounded-circle d-flex flex-column align-items-center justify-content-center px-6">
+        <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.1689%203.93359C17.083%204.39151%2016.9353%205.01906%2016.7373%205.7627C16.3422%207.24684%2015.7614%209.15002%2015.123%2010.998C14.4828%2012.8514%2013.7937%2014.6231%2013.1855%2015.8564C12.9212%2016.3925%2012.6864%2016.7888%2012.498%2017.0439C12.4787%2017.0157%2012.4571%2016.9858%2012.4365%2016.9531C12.3016%2016.7385%2012.1638%2016.4626%2012.0264%2016.1367C11.7513%2015.4843%2011.503%2014.6886%2011.293%2013.9033C11.0839%2013.1217%2010.9178%2012.3691%2010.8037%2011.8105C10.7468%2011.5318%2010.7022%2011.3025%2010.6729%2011.1436C10.6582%2011.0643%2010.648%2011.0025%2010.6406%2010.9609C10.637%2010.9402%2010.6336%2010.9244%2010.6318%2010.9141C10.6309%2010.9089%2010.6303%2010.9048%2010.6299%2010.9023C10.6297%2010.9013%2010.63%2010.8999%2010.6299%2010.8994L10.5312%2010.3242L9.9502%2010.2773H9.94727C9.94482%2010.2771%209.94073%2010.2768%209.93555%2010.2764C9.92471%2010.2755%209.90764%2010.2744%209.88574%2010.2725C9.84197%2010.2686%209.77692%2010.2621%209.69336%2010.2539C9.52597%2010.2375%209.28474%2010.2121%208.99316%2010.1768C8.40864%2010.1059%207.62769%209.99529%206.83203%209.83691C6.02974%209.67721%205.24267%209.47473%204.63379%209.22754C4.32937%209.10393%204.09551%208.97906%203.93262%208.86035C3.90752%208.84206%203.88591%208.82387%203.86621%208.80762C3.89015%208.78571%203.9159%208.75952%203.94727%208.7334C4.24285%208.48727%204.73134%208.18134%205.3877%207.83594C6.68825%207.15154%208.50472%206.38581%2010.3721%205.7002C12.2378%205.0152%2014.125%204.42131%2015.5586%204.07227C16.2489%203.9042%2016.8069%203.80056%2017.1973%203.76465C17.1885%203.81686%2017.1803%203.87335%2017.1689%203.93359Z'%20stroke='white'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="分享" width="20" height="20">
+        <small class="mt-1 fw-light fs-10">分享</small>
+      </button>
+
+      <!-- 下載 -->
+      <button type="button" class="btn btn-dark rounded-circle d-flex flex-column align-items-center justify-content-center px-6">
+        <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" width="20" height="20">
+        <small class="mt-1 fw-light fs-10">下載</small>
+      </button>
+
+      <!-- 收藏 -->
+      <button type="button" class="btn btn-dark rounded-circle d-flex flex-column align-items-center justify-content-center px-6">
+        <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15398)'%3e%3cpath%20d='M16.3832%203.32555C14.1832%201.82555%2011.4665%202.52555%209.99985%204.24221C8.53319%202.52555%205.81652%201.81721%203.61652%203.32555C2.44985%204.12555%201.71652%205.47555%201.66652%206.90055C1.54985%2010.1339%204.41652%2012.7255%208.79152%2016.7005L8.87485%2016.7755C9.50819%2017.3505%2010.4832%2017.3505%2011.1165%2016.7672L11.2082%2016.6839C15.5832%2012.7172%2018.4415%2010.1255%2018.3332%206.89221C18.2832%205.47555%2017.5499%204.12555%2016.3832%203.32555ZM10.0832%2015.4589L9.99985%2015.5422L9.91652%2015.4589C5.94985%2011.8672%203.33319%209.49221%203.33319%207.08388C3.33319%205.41721%204.58319%204.16721%206.24985%204.16721C7.53319%204.16721%208.78319%204.99221%209.22485%206.13388H10.7832C11.2165%204.99221%2012.4665%204.16721%2013.7499%204.16721C15.4165%204.16721%2016.6665%205.41721%2016.6665%207.08388C16.6665%209.49221%2014.0499%2011.8672%2010.0832%2015.4589Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15398'%3e%3crect%20width='20'%20height='20'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="收藏" width="20" height="20">
+        <small class="mt-1 fw-light fs-10">收藏</small>
+      </button>
+    </div>
+
+    <!-- 選單按鈕 -->
+    <div class="justify-content-start overflow-auto mb-8">
+      <div class="nav nav-tabs flex-nowrap w-100" id="nav-tab" role="tablist">
+        <button 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light active" 
+          id="nav-vocab-tab" data-bs-toggle="tab" data-bs-target="#nav-vocab" 
+          type="button" role="tab" aria-controls="nav-vocab" aria-selected="true">
+          集數
+        </button>
+
+        <button 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
+          type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
+          詳情
+        </button>
+
+        <button 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
+          type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
+          本劇金句
+        </button>
+
+        <button 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
+          type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
+          你可能喜歡
+        </button>
+
+        <button 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
+          type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
+          留言
+        </button>
+      </div>
+    </div>
+
+    <!-- 操作列：季數下拉 + 下載全部） -->
+    <section>
+      <div class="container-fluid p-0">
+        <div class="d-flex align-items-center justify-content-between">
+
+          <!-- 左：Bootstrap Dropdown -->
+          <div class="dropdown">
+            <!-- Bootstrap 自帶箭頭的 dropdown-toggle -->
+            <button class="btn dropdown-toggle text-white fw-normal fs-9 border-0 bg-transparent p-0 fw-light custom-toggle"
+                    type="button" id="seasonDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              第一季
+            </button>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVHgB7Y7RCYAwDEQPJ8kojuAIHcER3KyjtJvEEyMUiR9ahH7kwUHgyOOAIBgUVd2YwojTiXWr9zs9OCsjTG6ldmfrKl6uTHpSbNW17CDhCzdpn8yR9ssa6cLMCIJ/2AGd+Gbhq08erAAAAABJRU5ErkJggg==" alt="dropdown" width="20" height="20">
+            <ul class="dropdown-menu bg-black" aria-labelledby="seasonDropdown">
+              <!-- <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第一季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第二季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第三季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第四季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第五季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第六季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第七季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第八季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第九季</a></li>
+              <li><a class="dropdown-item text-white fs-9 fw-light" href="#">第十季</a></li> -->
+            </ul>
+          </div>
+          <!-- 右：下載全部 -->
+          <a href="#"
+            class="download-btn btn btn-link text-white d-inline-flex align-items-center gap-2 px-0 text-decoration-none"
+            aria-label="下載全部">
+            <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="" class="icon">
+            <span class="fw-light fs-9">下載全部</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+     <!-- 卡片內容 -->
+    <section>
+
+      <!-- 卡片1 -->
+      <div class="d-flex flex-column py-6">
+        <div class="d-flex text-white mb-1">
+          <!-- 左邊：縮圖 + 播放 icon -->
+          <div class="episode-thumb position-relative flex-shrink-0" style="width: 164px; height: 98px;">
+            <img src="/AAPD-StreamLish/assets/friends1-DzkxrmdH.png" class="w-100 h-100 object-fit-cover" alt="friends">
+            <!-- 播放按鈕 -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
+            </div>
+          </div>
+  
+          <!-- 右邊：內容 -->
+          <div class="d-flex flex-column justify-content-center ms-5 text-white">
+            <!-- 上：標題 + 下載 -->
+            <small class="mb-1 fw-light">EP1</small>
+            <h6 class="mb-1 fs-8 fw-light">摩妮卡有新室友</h6>
+            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+          </div>
+          <!-- 右邊：下載按鈕 -->
+          <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
+        </div>
+        <!-- 下：描述 -->
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+            蕾秋在婚禮當天前離開未婚夫，搬進去和摩妮卡同住，卻發現沒老爸的信用卡當後盾，自力更生其實比想像中困難。
+        </p>
+      </div>
+
+      <!-- 卡片2 -->
+      <div class="d-flex flex-column py-6">
+        <div class="d-flex text-white mb-1">
+          <!-- 左邊：縮圖 + 播放 icon -->
+          <div class="episode-thumb position-relative flex-shrink-0" style="width: 164px; height: 98px;">
+            <img src="/AAPD-StreamLish/assets/friends2-qtAAMA7t.png" class="w-100 h-100 object-fit-cover" alt="friends">
+            <!-- 播放按鈕 -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
+            </div>
+          </div>
+  
+          <!-- 右邊：內容 -->
+          <div class="d-flex flex-column justify-content-center ms-5 text-white">
+            <!-- 上：標題 + 下載 -->
+            <small class="mb-1">EP2</small>
+            <h6 class="mb-1 fs-8 fw-light">以超音波檢查作結</h6>
+            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+          </div>
+          <!-- 右邊：下載按鈕 -->
+          <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
+        </div>
+        <!-- 下：描述 -->
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+            羅斯的女同志前妻懷了她的小孩，羅斯卻不喜歡她給小孩取的姓。
+        </p>
+      </div>
+
+      <!-- 卡片3 -->
+      <div class="d-flex flex-column py-6">
+        <div class="d-flex text-white mb-1">
+          <!-- 左邊：縮圖 + 播放 icon -->
+          <div class="episode-thumb position-relative flex-shrink-0" style="width: 164px; height: 98px;">
+            <img src="/AAPD-StreamLish/assets/friends3-B4aC1tYf.png" class="w-100 h-100 object-fit-cover" alt="friends">
+            <!-- 播放按鈕 -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
+            </div>
+          </div>
+  
+          <!-- 右邊：內容 -->
+          <div class="d-flex flex-column justify-content-center ms-5 text-white">
+            <!-- 上：標題 + 下載 -->
+            <small class="mb-1">EP3</small>
+            <h6 class="mb-1 fs-8 fw-light">拇指</h6>
+            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+          </div>
+          <!-- 右邊：下載按鈕 -->
+          <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
+        </div>
+        <!-- 下：描述 -->
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+            菲碧在汽水罐裡發現一隻斷指，於是得到汽水公司給的七千元賠償，錢德勒的菸癮又犯了，惹得眾人不開心。
+        </p>
+      </div>
+
+      <!-- 卡片4 -->
+      <div class="d-flex flex-column py-6">
+        <div class="d-flex text-white mb-1">
+          <!-- 左邊：縮圖 + 播放 icon -->
+          <div class="episode-thumb position-relative flex-shrink-0" style="width: 164px; height: 98px;">
+            <img src="/AAPD-StreamLish/assets/friends4-DTZMHuIK.png" class="w-100 h-100 object-fit-cover" alt="friends">
+            <!-- 播放按鈕 -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
+            </div>
+          </div>
+  
+          <!-- 右邊：內容 -->
+          <div class="d-flex flex-column justify-content-center ms-5 text-white">
+            <!-- 上：標題 + 下載 -->
+            <small class="mb-1">EP4</small>
+            <h6 class="mb-1 fs-8 fw-light">喬治史蒂芬羅伯斯</h6>
+            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+          </div>
+          <!-- 右邊：下載按鈕 -->
+          <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
+        </div>
+        <!-- 下：描述 -->
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+            女孩們發現白宮前顧問喬治史蒂芬羅伯斯就住在對街，決定用望遠鏡一探究竟。
+        </p>
+      </div>
+
+      <!-- 卡片5 -->
+      <div class="d-flex flex-column py-6">
+        <div class="d-flex text-white mb-1">
+          <!-- 左邊：縮圖 + 播放 icon -->
+          <div class="episode-thumb position-relative flex-shrink-0" style="width: 164px; height: 98px;">
+            <img src="/AAPD-StreamLish/assets/friends7-DSqkcTCz.png" class="w-100 h-100 object-fit-cover" alt="friends">
+            <!-- 播放按鈕 -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
+            </div>
+          </div>
+  
+          <!-- 右邊：內容 -->
+          <div class="d-flex flex-column justify-content-center ms-5 text-white">
+            <!-- 上：標題 + 下載 -->
+            <small class="mb-1">EP5</small>
+            <h6 class="mb-1 fs-8 fw-light">東德國洗衣粉</h6>
+            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+          </div>
+          <!-- 右邊：下載按鈕 -->
+          <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
+        </div>
+        <!-- 下：描述 -->
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+            羅斯幫蕾秋洗衣服，並且認為這就是兩人的約會初體驗。喬伊要摩妮卡擔任他的新女友。
+        </p>
+      </div>
+
+      <!-- 卡片6 -->
+      <div class="d-flex flex-column py-6">
+        <div class="d-flex text-white mb-1">
+          <!-- 左邊：縮圖 + 播放 icon -->
+          <div class="episode-thumb position-relative flex-shrink-0" style="width: 164px; height: 98px;">
+            <img src="/AAPD-StreamLish/assets/friends5-Ck_tgq1m.png" class="w-100 h-100 object-fit-cover" alt="friends">
+            <!-- 播放按鈕 -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
+            </div>
+          </div>
+  
+          <!-- 右邊：內容 -->
+          <div class="d-flex flex-column justify-content-center ms-5 text-white">
+            <!-- 上：標題 + 下載 -->
+            <small class="mb-1">EP6</small>
+            <h6 class="mb-1 fs-8 fw-light">屁股</h6>
+            <small class="text-netural-400 fs-10 fw-light">19 分</small>
+          </div>
+          <!-- 右邊：下載按鈕 -->
+          <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
+        </div>
+        <!-- 下：描述 -->
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+            喬伊受雇擔任艾爾帕西諾的臀部替身，可謂從天而降的契機。
+        </p>
+      </div>
+
+      <!-- 卡片7 -->
+      <div class="d-flex flex-column py-6">
+        <div class="d-flex text-white mb-1">
+          <!-- 左邊：縮圖 + 播放 icon -->
+          <div class="episode-thumb position-relative flex-shrink-0" style="width: 164px; height: 98px;">
+            <img src="/AAPD-StreamLish/assets/friends6-1Q4JDsdF.png" class="w-100 h-100 object-fit-cover" alt="friends">
+            <!-- 播放按鈕 -->
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
+            </div>
+          </div>
+  
+          <!-- 右邊：內容 -->
+          <div class="d-flex flex-column justify-content-center ms-5 text-white">
+            <!-- 上：標題 + 下載 -->
+            <small class="mb-1">EP7</small>
+            <h6 class="mb-1 fs-8 fw-light">停電</h6>
+            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+          </div>
+          <!-- 右邊：下載按鈕 -->
+          <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
+        </div>
+        <!-- 下：描述 -->
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+            菲碧正要在中央咖啡廳演唱悲情民歌時，紐約突然發生大地震。
+        </p>
+      </div>
+
+    </section>
+
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  </div>
+
+    
+  </body>
+</html>

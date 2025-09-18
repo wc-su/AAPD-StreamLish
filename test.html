@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>單字測驗</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/AAPD-StreamLish/assets/test-CH72K030.js"></script>
+    <link rel="modulepreload" crossorigin href="/AAPD-StreamLish/assets/index-DdMuGOvR.js">
+    <link rel="modulepreload" crossorigin href="/AAPD-StreamLish/assets/_commonjsHelpers-D6-XlEtG.js">
+    <link rel="stylesheet" crossorigin href="/AAPD-StreamLish/assets/all-Qb0mTUN8.css">
+  </head>
+  <body class="bg-tertiary-950">
+    <!-- 頁標題 -->
+    <div id="test-question-wrapper">
+      <section>
+        <div class="container">
+          <div
+            class="justify-content-center position-relative text-center py-6"
+          >
+            <p class="d-inline text-white" id="test-step">1/2</p>
+            <a
+              class="d-inline fs-9 text-white position-absolute end-0 top-50 translate-middle-y"
+              href="StreamLish.html#word"
+              >離開</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="liner">
+        <div class="container">
+          <!-- 進度條線 -->
+          <div
+            class="d-flex gap-2 justify-content-center"
+            id="test-step-progress"
+          >
+            <div
+              class="underline-box border-top border-2 border-white-50 w-50"
+            ></div>
+            <div
+              class="underline-box w-50 border-top border-2 border-white-50"
+            ></div>
+          </div>
+
+          <!-- 測驗區 -->
+          <section>
+            <!-- 單字標題 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center test-padding-top"
+            >
+              <h1 class="fs-2 fw-bold text-white mb-6" id="question-title">
+                miraculous
+              </h1>
+              <div class="d-flex align-items-center mb-10">
+                <a
+                  href="#"
+                  class="btn border border-netural-0 rounded-pill d-flex align-items-center text-white py-3 px-5 me-3 fs-10"
+                >
+                  <span class="me-1">KK</span>
+                  <span id="kk-alphabet">[mɪˋrækjələs]</span>
+                  <span
+                    class="speaker material-symbols-outlined mb-1 ms-1 align-bottom"
+                    >volume_up</span
+                  >
+                </a>
+                <a
+                  href="#"
+                  class="btn border border-netural-0 rounded-pill d-flex align-items-center text-white py-3 px-5 fs-10"
+                >
+                  <span class="me-1">DJ</span>
+                  <span id="dj-alphabet">[miˋrækjuləs]</span>
+                  <span
+                    class="speaker material-symbols-outlined mb-1 ms-1 align-bottom"
+                    >volume_up</span
+                  >
+                </a>
+              </div>
+            </div>
+            <!-- 單字題目 -->
+            <div class="test-padding-bottom" id="test-questions"></div>
+            <button
+              type="button"
+              id="next-button"
+              class="opacity-0 btn btn-white-30 w-100 rounded-pill text-white mb-6 py-5 d-flex align-items-center justify-content-center mb-14 fs-7"
+            >
+              <span id="next-button-text">真可惜，挑戰下一題</span>
+              <span class="material-symbols-outlined align-bottom ms-2"
+                >arrow_right_alt</span
+              >
+            </button>
+          </section>
+        </div>
+      </section>
+    </div>
+    <div class="d-none" id="test-finish">
+      <section>
+        <div class="container">
+          <div class="justify-content-center text-center py-6">
+            <p class="d-inline text-white">單字測驗完成</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="liner">
+        <div class="container">
+          <!-- 測驗區 -->
+          <section>
+            <!-- 單字標題 -->
+            <div
+              class="d-flex flex-column align-items-center justify-content-center test-padding-top"
+            >
+              <img
+                src="/AAPD-StreamLish/assets/party-popper-B3fUR9df.png"
+                alt="party-popper"
+                class="party mb-7"
+              />
+              <h1 class="fs-2 fw-bold text-white mb-10">“完成了”</h1>
+            </div>
+
+            <!-- 文字說明 -->
+            <div class="mb-10 text-center">
+              <p class="text-white">
+                你答錯了<span
+                  class="ms-1 me-1 text-primary-500 fw-bold fs-6"
+                  id="wrong-count"
+                  >1</span
+                >個單字
+              </p>
+              <p class="text-white">
+                你已掌握<span
+                  class="ms-1 me-1 text-primary-500 fw-bold fs-6"
+                  id="correct-count"
+                  >1</span
+                >個單字
+              </p>
+              <p class="text-white">
+                恭喜獲得<span
+                  class="ms-1 me-1 text-primary-500 fw-bold fs-6"
+                  id="award-count"
+                  >1</span
+                >顆
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM3SURBVHgB3VU/TBNhFH/f9a7XhtJWJVpMQDC4mYhxVKNxZIJEioNKmZxEXHWgTA4OIm4Otuii1kSc2AyTqwxuJAISLQKSUgu0d9d7vvddW3pcC4mbvqT9vn7ve+/3e9/7U4B/XcRBykQKo+VQKaGg7wpd7QWBXVKBME/fSzbgh1dxf/qvAG6+sfp9CqZoG4WDBJGAYKIZUEOA4Yz5hJYx3m/lLPi1bsLmhgWloi31LSGf/HR266AHFAcHIPlyUJs4FOB2xhynw6RlIawslSD73YCWsArBkAY+1bluGjZYRhkKORNOxPzQQUAq62yYnB7S7jcFuPXWSChCpNj5l8/bdF9A+KgfhNL4JW0bCcQAQevZ8y0SRNhiID2kzlTvKPUGCijjvDJzIKeRNr2pc3lfYQK6JLKyWHKeivLGxeEBYPZcJUV6559ZE0JRv8dhz3EBvR2K57yVosz+MGS+SKLlYClR1anVjQDsB8mkSM41F/NYWMDUDT+0R5yz7BbC6GsDVvNYi4TzxMUQiapse5WOJ10RCKGc4nW7YIPmd7McuUhG5LtvqgTx5yXpOH5Bdd0JhlRZaQ5Zcc4TAUmvA1CG1jY3APMO6QCXehRYWLcl+/3iU5VaGRObrkYATSX1yYJYRIMHfZr8zU/0cMaAhTU81LZGFRGXedUDAsqW27D65pcfF+XKz3X3mua6w73BzVeReQ8AQcjDo20a7BZMlzEn+MWwLpPNrLEBcW68KgCiveyNQOAcr8cIYCdvAdp7Xp59NKE1AJC5o8PsqC4jeDS7RwJlw5lydDhORa3RarWYeI9RLFuLNFSiXxd2IZezZaPVS3u4UqZ5dwj5TQMipDt9JkgecWn6ur/bE0F6QOSovEZ439kdIAXCbzKsj4Qd1ztn3dZGicaDLW0kYxtcA8877N6ZkwLhHs+jb9R0a6uWbDzuDbXSH1wEuwULtvMmxE5q0rmcQzS204Na8kAA+VwZM0k85Vzi0cHdXaD+2Ck4dc6VxsXA+YoccSpdID5Nx/1j+301nWQJmk2o0PDDyr9YMxGQE2UxUj9B3epDhIFsQXMKRZcQzgiQPSNwnvI0B6qe5vzBfyt/ANNqXSID0K9pAAAAAElFTkSuQmCC" alt="s-coin" />
+                幣獎勵
+              </p>
+            </div>
+
+            <!-- 按鈕區 -->
+            <div
+              class="test-padding-bottom d-flex flex-column align-items-center justify-content-center"
+            >
+              <!-- 再測一次按鈕 -->
+              <button
+                type="button"
+                class="btn btn-white-30 w-100 rounded-pill text-white mb-6 py-5 d-flex align-items-center justify-content-center mb-6"
+              >
+                <a href="test.html" id="retest-link"> 再測一次 </a>
+              </button>
+              <!-- 結束測驗按鈕 -->
+              <button
+                type="button"
+                class="btn btn-primary-500 w-100 rounded-pill text-white mb-10 py-5"
+              >
+                <a href="StreamLish.html#word">結束測驗</a>
+              </button>
+              <!-- 單字詳解 -->
+              <a
+                href="#"
+                class="text-white fs-10 border-bottom border-netural-500-50"
+                >答錯單字釋義</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
