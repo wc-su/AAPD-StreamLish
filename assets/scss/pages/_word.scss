@@ -20,8 +20,7 @@ li {
 }
 
 .speaker {
-  width: 12px;
-  height: 12px;
+  font-size: 16px !important;
 }
 
 .white-20 {
@@ -233,4 +232,15 @@ li {
 .series-6 {
   width: 109px;
   height: 156px;
+}
+
+.nav-pills .nav-link {
+  color: $netural-500;
+}
+
+.btn-check:checked + .nav-link,
+.nav-pills .nav-link:hover {
+  border: 1px solid $netural-500;
+  background-color: $tertiary-900;
+  color: $white;
 }
