@@ -469,6 +469,8 @@ player.on('useractive', () => {
   // 當滑鼠或手勢操作時顯示按鈕
   document.querySelector('.vjs-extra-group').style.opacity = '1';
   document.querySelector('.vjs-play-group').style.opacity = '1';
+  const videoWrapper = document.querySelector('.video-wrapper');
+  videoWrapper.classList.add("video-js-mask");
 });
 
 player.on('userinactive', () => {
@@ -476,6 +478,8 @@ player.on('userinactive', () => {
     // 超過 idle 時隱藏按鈕
     document.querySelector('.vjs-extra-group').style.opacity = '0';
     document.querySelector('.vjs-play-group').style.opacity = '0';
+    const videoWrapper = document.querySelector('.video-wrapper');
+    videoWrapper.classList.remove("video-js-mask");
   }
 });
 
