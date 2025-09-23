@@ -9,17 +9,32 @@
     <title>影片資訊-集數</title>
     <script type="module" crossorigin src="/AAPD-StreamLish/assets/index-DdMuGOvR.js"></script>
     <script type="module" crossorigin src="/AAPD-StreamLish/assets/bootstrap.esm-pHIF-KX_.js"></script>
-    <script type="module" crossorigin src="/AAPD-StreamLish/assets/main-BXktTT-d.js"></script>
-    <link rel="stylesheet" crossorigin href="/AAPD-StreamLish/assets/all-Qb0mTUN8.css">
+    <script type="module" crossorigin src="/AAPD-StreamLish/assets/main-D3e1sQlY.js"></script>
+    <link rel="stylesheet" crossorigin href="/AAPD-StreamLish/assets/all-wo_l9HM2.css">
   </head>
-  <body class="bg-black">
+  <body class="bg-tertiary-950">
 
   <!-- 預覽圖片  -->
   <div class="card bg-dark border-0 rounded-2 overflow-hidden mb-8">
     <div class="position-relative">
+      
       <!-- 圖片 -->
-      <img src="/AAPD-StreamLish/assets/friends9-D6xdVJJv.png" class="w-100 h-100 object-fit-cover" alt="friends9">
-
+      <!-- <img src="../assets/images/friends9.png" class="w-100 h-100 object-fit-cover" alt="friends9"> -->
+      
+      <!-- 影片 -->
+      <div class="ratio ratio-16x9">
+        <video id="myVideo"
+              class="w-100 h-100 object-fit-cover"     
+              autoplay            
+              muted               
+              playsinline         
+              preload="metadata"> 
+          <source src="https://videos.pexels.com/video-files/27300968/12115023_2560_1440_30fps.mp4" type="video/mp4">
+          您的瀏覽器不支援 video 標籤
+        </video>
+      </div>
+      
+      
       <!-- 播放進度條 (放在圖片上) -->
       <div class="position-absolute bottom-0 start-0 w-100">
         <div class="progress" style="height: 6px; background-color: rgba(255,255,255,0.3);">
@@ -70,27 +85,28 @@
   
     <!-- 劇集描述 + 操作卡片 -->
     <div class="mb-8">
-      <h6 class="fw-semibold mb-5 text-white fs-6">EP1 摩妮卡有新室友</h6>
-      <p class="small fw-light text-netural-400">
+      <h6 class="fw-bold mb-5 text-white fs-6">EP1 摩妮卡有新室友</h6>
+      <p class="small fw-normal text-netural-400">
         蕾秋在婚禮當天前離開未婚夫，搬進去和摩妮卡同住，卻發現沒老爸的信用卡借後盾，自力更生其實比想像中困難。
       </p>  
     </div>
 
     <!-- 主播放按鈕 -->
     <div class="d-grid mb-6">
+      <!-- <button class="btn btn-primary rounded-pill text-white" style="height: 50px" href="video.html'"> -->
       <button class="btn btn-primary rounded-pill text-white" style="height: 50px" onclick="location.href='video.html'">
         <img class="me-1 mb-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABxSURBVHgBlZJRDYAwDEQLCpCABHCAFCTgACTgACs4QAI4QMLRJmtClmW7veQ+lrxsbW4CoLMIg4p3yMzIfy5Nz8rOWiMjjDawsnP4aI2dpMyjGVupgRhjh/eA/IITc/OGVKuRdKJQij33ahYhFqQ/0geR1Qospks9vgAAAABJRU5ErkJggg==" alt="Arrow right">
-        播放・第一季 EP1
+          <span class="btn-play" >播放・第一季</span>
+          <span class="ep">EP1</span>
       </button>
     </div>
-
 
     <!-- 按鈕 -->
     <div class="d-flex justify-content-around mb-8">
       <!-- 分享 -->
       <button type="button" class="btn btn-dark rounded-circle d-flex flex-column align-items-center justify-content-center px-6">
         <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M17.1689%203.93359C17.083%204.39151%2016.9353%205.01906%2016.7373%205.7627C16.3422%207.24684%2015.7614%209.15002%2015.123%2010.998C14.4828%2012.8514%2013.7937%2014.6231%2013.1855%2015.8564C12.9212%2016.3925%2012.6864%2016.7888%2012.498%2017.0439C12.4787%2017.0157%2012.4571%2016.9858%2012.4365%2016.9531C12.3016%2016.7385%2012.1638%2016.4626%2012.0264%2016.1367C11.7513%2015.4843%2011.503%2014.6886%2011.293%2013.9033C11.0839%2013.1217%2010.9178%2012.3691%2010.8037%2011.8105C10.7468%2011.5318%2010.7022%2011.3025%2010.6729%2011.1436C10.6582%2011.0643%2010.648%2011.0025%2010.6406%2010.9609C10.637%2010.9402%2010.6336%2010.9244%2010.6318%2010.9141C10.6309%2010.9089%2010.6303%2010.9048%2010.6299%2010.9023C10.6297%2010.9013%2010.63%2010.8999%2010.6299%2010.8994L10.5312%2010.3242L9.9502%2010.2773H9.94727C9.94482%2010.2771%209.94073%2010.2768%209.93555%2010.2764C9.92471%2010.2755%209.90764%2010.2744%209.88574%2010.2725C9.84197%2010.2686%209.77692%2010.2621%209.69336%2010.2539C9.52597%2010.2375%209.28474%2010.2121%208.99316%2010.1768C8.40864%2010.1059%207.62769%209.99529%206.83203%209.83691C6.02974%209.67721%205.24267%209.47473%204.63379%209.22754C4.32937%209.10393%204.09551%208.97906%203.93262%208.86035C3.90752%208.84206%203.88591%208.82387%203.86621%208.80762C3.89015%208.78571%203.9159%208.75952%203.94727%208.7334C4.24285%208.48727%204.73134%208.18134%205.3877%207.83594C6.68825%207.15154%208.50472%206.38581%2010.3721%205.7002C12.2378%205.0152%2014.125%204.42131%2015.5586%204.07227C16.2489%203.9042%2016.8069%203.80056%2017.1973%203.76465C17.1885%203.81686%2017.1803%203.87335%2017.1689%203.93359Z'%20stroke='white'%20stroke-width='1.5'/%3e%3c/svg%3e" alt="分享" width="20" height="20">
-        <small class="mt-1 fw-light fs-10">分享</small>
+        <small class="mnorfw-normal fs-10">分享</small>
       </button>
 
       <!-- 下載 -->
@@ -110,35 +126,35 @@
     <div class="justify-content-start overflow-auto mb-8">
       <div class="nav nav-tabs flex-nowrap w-100" id="nav-tab" role="tablist">
         <button 
-          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light active" 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-normal fs-9 active" 
           id="nav-vocab-tab" data-bs-toggle="tab" data-bs-target="#nav-vocab" 
           type="button" role="tab" aria-controls="nav-vocab" aria-selected="true">
           集數
         </button>
 
         <button 
-          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-normal fs-9" 
           id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
           type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
           詳情
         </button>
 
         <button 
-          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-normal fs-9" 
           id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
           type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
           本劇金句
         </button>
 
         <button 
-          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-normal fs-9" 
           id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
           type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
           你可能喜歡
         </button>
 
         <button 
-          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-light" 
+          class="nav-link flex-shrink-0 text-netural-400 border-bottom border-netural-500 fw-normal fs-9" 
           id="nav-detail-tab" data-bs-toggle="tab" data-bs-target="#nav-detail" 
           type="button" role="tab" aria-controls="nav-detail" aria-selected="false">
           留言
@@ -177,7 +193,7 @@
             class="download-btn btn btn-link text-white d-inline-flex align-items-center gap-2 px-0 text-decoration-none"
             aria-label="下載全部">
             <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="" class="icon">
-            <span class="fw-light fs-9">下載全部</span>
+            <span class="fw-normal fs-9">下載全部</span>
           </a>
 
         </div>
@@ -202,15 +218,15 @@
           <!-- 右邊：內容 -->
           <div class="d-flex flex-column justify-content-center ms-5 text-white">
             <!-- 上：標題 + 下載 -->
-            <small class="mb-1 fw-light">EP1</small>
-            <h6 class="mb-1 fs-8 fw-light">摩妮卡有新室友</h6>
-            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+            <small class="mb-1 fw-normal">EP1</small>
+            <h6 class="mb-1 fs-8 fw-normal">摩妮卡有新室友</h6>
+            <small class="text-netural-400 fs-10 fw-normal">20 分</small>
           </div>
           <!-- 右邊：下載按鈕 -->
           <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
         </div>
         <!-- 下：描述 -->
-        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-normal">
             蕾秋在婚禮當天前離開未婚夫，搬進去和摩妮卡同住，卻發現沒老爸的信用卡當後盾，自力更生其實比想像中困難。
         </p>
       </div>
@@ -231,14 +247,14 @@
           <div class="d-flex flex-column justify-content-center ms-5 text-white">
             <!-- 上：標題 + 下載 -->
             <small class="mb-1">EP2</small>
-            <h6 class="mb-1 fs-8 fw-light">以超音波檢查作結</h6>
-            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+            <h6 class="mb-1 fs-8 fw-normal">以超音波檢查作結</h6>
+            <small class="text-netural-400 fs-10 fw-normal">20 分</small>
           </div>
           <!-- 右邊：下載按鈕 -->
           <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
         </div>
         <!-- 下：描述 -->
-        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-normal">
             羅斯的女同志前妻懷了她的小孩，羅斯卻不喜歡她給小孩取的姓。
         </p>
       </div>
@@ -259,14 +275,14 @@
           <div class="d-flex flex-column justify-content-center ms-5 text-white">
             <!-- 上：標題 + 下載 -->
             <small class="mb-1">EP3</small>
-            <h6 class="mb-1 fs-8 fw-light">拇指</h6>
-            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+            <h6 class="mb-1 fs-8 fw-normal">拇指</h6>
+            <small class="text-netural-400 fs-10 fw-normal">20 分</small>
           </div>
           <!-- 右邊：下載按鈕 -->
           <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
         </div>
         <!-- 下：描述 -->
-        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-normal">
             菲碧在汽水罐裡發現一隻斷指，於是得到汽水公司給的七千元賠償，錢德勒的菸癮又犯了，惹得眾人不開心。
         </p>
       </div>
@@ -287,14 +303,14 @@
           <div class="d-flex flex-column justify-content-center ms-5 text-white">
             <!-- 上：標題 + 下載 -->
             <small class="mb-1">EP4</small>
-            <h6 class="mb-1 fs-8 fw-light">喬治史蒂芬羅伯斯</h6>
-            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+            <h6 class="mb-1 fs-8 fw-normal">喬治史蒂芬羅伯斯</h6>
+            <small class="text-netural-400 fs-10 fw-normal">20 分</small>
           </div>
           <!-- 右邊：下載按鈕 -->
           <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
         </div>
         <!-- 下：描述 -->
-        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-normal">
             女孩們發現白宮前顧問喬治史蒂芬羅伯斯就住在對街，決定用望遠鏡一探究竟。
         </p>
       </div>
@@ -315,14 +331,14 @@
           <div class="d-flex flex-column justify-content-center ms-5 text-white">
             <!-- 上：標題 + 下載 -->
             <small class="mb-1">EP5</small>
-            <h6 class="mb-1 fs-8 fw-light">東德國洗衣粉</h6>
-            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+            <h6 class="mb-1 fs-8 fw-normal">東德國洗衣粉</h6>
+            <small class="text-netural-400 fs-10 fw-normal">20 分</small>
           </div>
           <!-- 右邊：下載按鈕 -->
           <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
         </div>
         <!-- 下：描述 -->
-        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-normal">
             羅斯幫蕾秋洗衣服，並且認為這就是兩人的約會初體驗。喬伊要摩妮卡擔任他的新女友。
         </p>
       </div>
@@ -343,14 +359,14 @@
           <div class="d-flex flex-column justify-content-center ms-5 text-white">
             <!-- 上：標題 + 下載 -->
             <small class="mb-1">EP6</small>
-            <h6 class="mb-1 fs-8 fw-light">屁股</h6>
-            <small class="text-netural-400 fs-10 fw-light">19 分</small>
+            <h6 class="mb-1 fs-8 fw-normal">屁股</h6>
+            <small class="text-netural-400 fs-10 fw-normal">19 分</small>
           </div>
           <!-- 右邊：下載按鈕 -->
           <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
         </div>
         <!-- 下：描述 -->
-        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-normal">
             喬伊受雇擔任艾爾帕西諾的臀部替身，可謂從天而降的契機。
         </p>
       </div>
@@ -371,14 +387,14 @@
           <div class="d-flex flex-column justify-content-center ms-5 text-white">
             <!-- 上：標題 + 下載 -->
             <small class="mb-1">EP7</small>
-            <h6 class="mb-1 fs-8 fw-light">停電</h6>
-            <small class="text-netural-400 fs-10 fw-light">20 分</small>
+            <h6 class="mb-1 fs-8 fw-normal">停電</h6>
+            <small class="text-netural-400 fs-10 fw-normal">20 分</small>
           </div>
           <!-- 右邊：下載按鈕 -->
           <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="下載" class="ms-auto" style="width: 24px;" >
         </div>
         <!-- 下：描述 -->
-        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-light">
+        <p class="mb-0 mt-2 text-netural-400 fs-10 fw-normal">
             菲碧正要在中央咖啡廳演唱悲情民歌時，紐約突然發生大地震。
         </p>
       </div>

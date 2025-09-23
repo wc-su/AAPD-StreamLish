@@ -9,8 +9,8 @@
     <title>StreamLish</title>
     <script type="module" crossorigin src="/AAPD-StreamLish/assets/index-DdMuGOvR.js"></script>
     <script type="module" crossorigin src="/AAPD-StreamLish/assets/bootstrap.esm-pHIF-KX_.js"></script>
-    <script type="module" crossorigin src="/AAPD-StreamLish/assets/main-BXktTT-d.js"></script>
-    <link rel="stylesheet" crossorigin href="/AAPD-StreamLish/assets/all-Qb0mTUN8.css">
+    <script type="module" crossorigin src="/AAPD-StreamLish/assets/main-D3e1sQlY.js"></script>
+    <link rel="stylesheet" crossorigin href="/AAPD-StreamLish/assets/all-wo_l9HM2.css">
   </head>
   <body>
 
@@ -65,7 +65,6 @@
         <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="4"></button>
         <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="5"></button>
         <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="6"></button>
-        <button type="button" data-bs-target="#movieCarousel" data-bs-slide-to="7"></button>
       </div>
 
       <!-- 左右切換箭頭 -->
@@ -81,29 +80,26 @@
 
     
     <!-- <div class="container"> -->
-    <div class="container bottom-padding right-padding fw-light">
-      <!-- 分類按鈕 -->
-      <div class="py-4 mb-8 ">
-        <ul class="nav nav-pills" role="tablist">
+    <div class="container bottom-padding-home right-padding fw-light">
+      <div class="py-4 mb-8">
+        <ul class="nav nav-pills pills-static pe-none" role="tablist" aria-label="分類">
           <li class="nav-item" role="presentation">
-            <input type="radio" class="btn-check" name="category" id="movie" autocomplete="off" checked>
-            <label class="nav-link rounded-pill px-5" for="movie">電影</label>
+            <span class="nav-link rounded-pill px-5 py-2 fs-10 is-active" aria-current="page">電影</span>
           </li>
           <li class="nav-item" role="presentation">
-            <input type="radio" class="btn-check" name="category" id="series" autocomplete="off">
-            <label class="nav-link rounded-pill px-5" for="series">影集</label>
+            <span class="nav-link rounded-pill px-5 py-2 fs-10">影集</span>
           </li>
           <li class="nav-item" role="presentation">
-            <input type="radio" class="btn-check" name="category" id="anime" autocomplete="off">
-            <label class="nav-link rounded-pill px-5" for="anime">動畫</label>
+            <span class="nav-link rounded-pill px-5 py-2 fs-10">動畫</span>
           </li>
         </ul>
       </div>
 
 
+
       <!-- 繼續觀看 -->
       <div class="mb-8">
-        <h6 class="fw-normal text-white mb-5">繼續觀看</h6 >
+        <h6 class="fw-normal text-white mb-5 letter-spacing-title">繼續觀看</h6 >
         <!-- 影片輪播 (水平捲動) -->
         <div class="d-flex overflow-auto pb-2">
           <!-- 卡片  -->
@@ -116,7 +112,7 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
               </div>
               <!-- 播放進度時間 -->
-              <span class="badge position-absolute bottom-0 start-0">S3:E8</span>
+              <span class="badge position-absolute bottom-0 start-0 fs-12">S3:E8</span>
             </div>
             <!-- 進度條 -->
             <div class="progress bg-tertiary-400" style="height: 2px;">
@@ -137,7 +133,7 @@
               <div class="position-absolute top-50 start-50 translate-middle">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
               </div>
-              <span class="badge position-absolute bottom-0 start-0">S3:E8</span>
+              <span class="badge position-absolute bottom-0 start-0 fs-12">S3:E8</span>
             </div>
             <div class="progress bg-tertiary-400" style="height: 2px;">
               <div class="progress-bar bg-white" role="progressbar" style="width: 20%;"></div>
@@ -156,7 +152,7 @@
               <div class="position-absolute top-50 start-50 translate-middle">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
               </div>
-              <span class="badge position-absolute bottom-0 start-0">S3:E8</span>
+              <span class="badge position-absolute bottom-0 start-0 fs-12">S3:E8</span>
             </div>
             <div class="progress bg-tertiary-400" style="height: 2px;">
               <div class="progress-bar bg-white" role="progressbar" style="width: 20%;"></div>
@@ -172,8 +168,8 @@
 
       <!-- 學過的都演給你看 -->
       <div class="mb-8">
-        <div class="d-flex justify-content-between align-items-center mb-5"> 
-          <h6 class="fw-normal text-white mb-0">學過的都演給你看</h6>
+        <div class="d-flex justify-content-between align-items-center mb-5 me-6"> 
+          <h6 class="fw-normal text-white mb-0 letter-spacing-title">學過的都演給你看</h6>
           <a href="./review.html" class="d-flex align-items-center text-white text-decoration-none small">
             <span class="fw-normal">更多</span>
             <span class="material-icons-outlined">chevron_right</span>
@@ -227,8 +223,8 @@
 
       <!-- 歷史紀錄 -->
       <div class="mb-8">
-        <div class="d-flex justify-content-between align-items-center mb-5"> 
-          <h6 class="fw-normal text-white mb-0">歷史紀錄</h6>
+        <div class="d-flex justify-content-between align-items-center mb-5 me-6"> 
+          <h6 class="fw-normal text-white mb-0 letter-spacing-title">歷史紀錄</h6>
           <a href="#" class="d-flex align-items-center text-white text-decoration-none small">
             <span class="fw-normal">更多</span>
             <span class="material-icons-outlined">chevron_right</span>
@@ -282,9 +278,9 @@
       </div>
 
       <!-- 十大熱播排行 -->
-      <div class="mb-8">
-        <div class="d-flex justify-content-between align-items-center mb-5"> 
-          <h6 class="fw-normal text-white mb-0">十大熱播排行</h6>
+      <div>
+        <div class="d-flex justify-content-between align-items-center mb-5 me-6"> 
+          <h6 class="fw-normal text-white mb-0 letter-spacing-title">十大熱播排行</h6>
           <a href="#" class="d-flex align-items-center text-white text-decoration-none small">
             <span class="fw-normal">更多</span>
             <span class="material-icons-outlined">chevron_right</span>
@@ -456,7 +452,7 @@
                       </li>
                     </ul>
   
-                    <p class="text-netural-500 fs-9 me-3">｜</p>
+                    <p class="text-netural-500 fs-9 me-3 ms-1">｜</p>
                     <!-- 右側nav按鈕 -->
                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
                       <li class="nav-item fs-9" role="presentation">
@@ -851,11 +847,11 @@
        <body class="bg-tertiary-950">
 
 
-<div class="container top-margin bottom-padding">
+<div class="container bottom-padding">
 
   <!-- 搜尋框 -->
   <div class="py-3">
-    <div class="input-group rounded-pill px-3 bg-tertiary-900">
+    <div class="input-group rounded-pill px-3 bg-tertiary-900 py-1">
       <!-- 搜尋 icon -->
       <span class="input-group-text bg-transparent border-0 pe-2">
         <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21506_13489)'%3e%3cpath%20d='M15.8336%2014.0006H15.0436L14.7636%2013.7306C15.9636%2012.3306%2016.5836%2010.4206%2016.2436%208.39063C15.7736%205.61063%2013.4536%203.39063%2010.6536%203.05063C6.42363%202.53063%202.86363%206.09063%203.38363%2010.3206C3.72363%2013.1206%205.94363%2015.4406%208.72363%2015.9106C10.7536%2016.2506%2012.6636%2015.6306%2014.0636%2014.4306L14.3336%2014.7106V15.5006L18.5836%2019.7506C18.9936%2020.1606%2019.6636%2020.1606%2020.0736%2019.7506C20.4836%2019.3406%2020.4836%2018.6706%2020.0736%2018.2606L15.8336%2014.0006ZM9.83363%2014.0006C7.34363%2014.0006%205.33363%2011.9906%205.33363%209.50063C5.33363%207.01063%207.34363%205.00063%209.83363%205.00063C12.3236%205.00063%2014.3336%207.01063%2014.3336%209.50063C14.3336%2011.9906%2012.3236%2014.0006%209.83363%2014.0006Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21506_13489'%3e%3crect%20width='24'%20height='24'%20fill='white'%20transform='translate(0.333496)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="search" width="20" height="20">
@@ -865,7 +861,7 @@
   </div>
   
   <!-- 熱門下拉選單 -->
-  <div class="d-flex gap-6 text-white my-5 fw-light">
+  <div class="d-flex gap-6 text-white my-6 fw-light">
     
     <div class="dropdown">
       <button class="btn btn-dark dropdown-toggle p-0 border-0 bg-transparent text-white custom-toggle fs-9" 
@@ -918,10 +914,23 @@
             <img src="/AAPD-StreamLish/assets/fantastic%20beasts-CZFOmQEE.jpg" class="w-100 h-100 object-fit-cover" alt="fantastic beasts">
           </div>
           <div class="card-body p-0">
-            <span class="fs-9">怪獸與他們的產物</span>
+            <span class="fs-9 text-truncate d-block">
+              怪獸與他們的產物
+            </span>
           </div>
         </div>
       </div>
+
+      <!-- <div class="col-4">
+        <div class="card bg-transparent text-white border-0 rounded-2 mb-5 overflow-hidden" style="width: 109px; height: 181px; flex-shrink: 0;">
+          <div class="mb-1" style="height: 156px;">
+            <img src="../assets/images/fantastic beasts.jpg" class="w-100 h-100 object-fit-cover" alt="fantastic beasts">
+          </div>
+          <div class="card-body p-0">
+            <span class="fs-9">怪獸與他們的產物</span>
+          </div>
+        </div>
+      </div> -->
 
       <!-- 卡片 -->
       <div class="col-4">
@@ -1091,22 +1100,22 @@
     <!-- 會員 -->
     <div class="tab-pane fade" id="member" role="tabpanel" aria-labelledby="member-tab">
       <!-- 會員首頁 -->
-       <body class="bg-black">
+       <body class="bg-tertiary-950">
 
     <!-- 會員首頁 Banner -->
-  <div class="card border-0 rounded-0 text-white position-relative" >
+  <div class="card border-0 rounded-0 text-white position-relative banner-margin" >
     <!-- 背景圖 -->
-    <img src="/AAPD-StreamLish/assets/japan%20view-DeiKeEZn.png" class="card-img object-fit-cover" alt="會員背景" >
-
+    <img src="/AAPD-StreamLish/assets/japan%20view-DeiKeEZn.png" class="card-img object-fit-cover"  alt="會員背景">
+    <div class="carousel-gradient"></div><!-- 底部黑色漸層遮罩 -->
     <!-- 黑色半透明遮罩 -->
-    <div class="position-absolute bottom-0 start-0 w-100 h-50 banner-overlay"></div>
+    <div class="position-absolute bottom-0 start-0 w-100  banner-overlay" style="height: 45%;"></div>
 
     <div class="bg-black" style="z-index:2;">
       <!-- 右上角通知與相機 -->
       <div class="position-absolute top-0 end-0 mt-6 me-6 d-flex gap-3 top-padding">
       <!-- 相機 -->
-      <div class="position-relative rounded-circle bg-white bg-opacity-50 p-3 d-flex align-items-center justify-content-center">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVHgB7ZSNCYNADIUfnaAjdIRuYEe5EdxAR3CDdpRu0BEcod3g+g4SuP6AiUEQ9IOg3OW9GM4LsClyzqkElkDMlWTVHSxJNDzy0VRLjazFoVHLeOZfxrKHCDToKsM7Y2D08q50mAOFp8qkx//OlDO8UHQT8dWQM8ALRY+pr+PeRc8DXrT3aJ7pN42wF1hpgTm306z5mppeWksHkSn5wmrJnyPbPxoMBcrZjFIoYTO8AWk5Hmd9tfxKAAAAAElFTkSuQmCC" alt="camera" width="24" height="24">
+      <div class="position-relative rounded-circle bg-white bg-opacity-50 p-3 d-flex align-items-center justify-content-center shadow-custom">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVHgB7ZSNCYNADIUfnaAjdIRuYEe5EdxAR3CDdpRu0BEcod3g+g4SuP6AiUEQ9IOg3OW9GM4LsClyzqkElkDMlWTVHSxJNDzy0VRLjazFoVHLeOZfxrKHCDToKsM7Y2D08q50mAOFp8qkx//OlDO8UHQT8dWQM8ALRY+pr+PeRc8DXrT3aJ7pN42wF1hpgTm306z5mppeWksHkSn5wmrJnyPbPxoMBcrZjFIoYTO8AWk5Hmd9tfxKAAAAAElFTkSuQmCC" alt="camera" width="24" height="24" style="z-index:2;">
         <!-- 紅點通知 -->
         <span class="position-absolute top-0 start-100 bg-danger text-white badge-overlap">
         1
@@ -1114,8 +1123,8 @@
       </div>
 
       <!-- 通知 -->
-      <div class="position-relative rounded-circle bg-white bg-opacity-50 p-3 d-flex align-items-center justify-content-center">
-        <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="notification" width="24" height="24" class="opacity-75">
+      <div class="position-relative rounded-circle bg-white bg-opacity-50 p-3 d-flex align-items-center justify-content-center shadow-custom">
+        <img src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21525_15393)'%3e%3cpath%20d='M16.3333%2010.8333V15C16.3333%2015.4583%2015.9583%2015.8333%2015.5%2015.8333H5.5C5.04167%2015.8333%204.66667%2015.4583%204.66667%2015V10.8333C4.66667%2010.375%204.29167%2010%203.83333%2010C3.375%2010%203%2010.375%203%2010.8333V15.8333C3%2016.75%203.75%2017.5%204.66667%2017.5H16.3333C17.25%2017.5%2018%2016.75%2018%2015.8333V10.8333C18%2010.375%2017.625%2010%2017.1667%2010C16.7083%2010%2016.3333%2010.375%2016.3333%2010.8333ZM11.3333%2010.5583L12.9%208.99167C13.225%208.66667%2013.75%208.66667%2014.075%208.99167C14.4%209.31667%2014.4%209.84167%2014.075%2010.1667L11.0833%2013.1583C10.7583%2013.4833%2010.2333%2013.4833%209.90833%2013.1583L6.91667%2010.1667C6.59167%209.84167%206.59167%209.31667%206.91667%208.99167C7.24167%208.66667%207.76667%208.66667%208.09167%208.99167L9.66667%2010.5583V3.33333C9.66667%202.875%2010.0417%202.5%2010.5%202.5C10.9583%202.5%2011.3333%202.875%2011.3333%203.33333V10.5583Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21525_15393'%3e%3crect%20width='20'%20height='20'%20fill='white'%20transform='translate(0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="notification" width="24" height="24" style="z-index:2;">
         <!-- 紅點通知 -->
         <span class="position-absolute top-0 start-100 bg-danger text-white badge-overlap">
         1
@@ -1123,10 +1132,9 @@
         </div>
       </div>
 
-    
-      <!-- 頭像與名稱 -->
-        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-end p-4" 
-          style="background: linear-gradient(to top, rgba(0,0,0,1), transparent);">
+      <div class="d-flex justify-content-center">
+        <!-- 頭像與名稱 -->
+        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-end p-4" >
           
         <div class="position-relative mb-3 d-inline-block">
           <!-- 頭像 -->
@@ -1141,15 +1149,17 @@
         <p class="mb-6 fs-10 fw-light">一般會員</p>
     
         <!-- 點數 -->
-        <div class="d-flex align-items-center gap-1 mb-6">
+        <div class="d-flex align-items-center justify-content-center gap-1 mb-6">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM3SURBVHgB3VU/TBNhFH/f9a7XhtJWJVpMQDC4mYhxVKNxZIJEioNKmZxEXHWgTA4OIm4Otuii1kSc2AyTqwxuJAISLQKSUgu0d9d7vvddW3pcC4mbvqT9vn7ve+/3e9/7U4B/XcRBykQKo+VQKaGg7wpd7QWBXVKBME/fSzbgh1dxf/qvAG6+sfp9CqZoG4WDBJGAYKIZUEOA4Yz5hJYx3m/lLPi1bsLmhgWloi31LSGf/HR266AHFAcHIPlyUJs4FOB2xhynw6RlIawslSD73YCWsArBkAY+1bluGjZYRhkKORNOxPzQQUAq62yYnB7S7jcFuPXWSChCpNj5l8/bdF9A+KgfhNL4JW0bCcQAQevZ8y0SRNhiID2kzlTvKPUGCijjvDJzIKeRNr2pc3lfYQK6JLKyWHKeivLGxeEBYPZcJUV6559ZE0JRv8dhz3EBvR2K57yVosz+MGS+SKLlYClR1anVjQDsB8mkSM41F/NYWMDUDT+0R5yz7BbC6GsDVvNYi4TzxMUQiapse5WOJ10RCKGc4nW7YIPmd7McuUhG5LtvqgTx5yXpOH5Bdd0JhlRZaQ5Zcc4TAUmvA1CG1jY3APMO6QCXehRYWLcl+/3iU5VaGRObrkYATSX1yYJYRIMHfZr8zU/0cMaAhTU81LZGFRGXedUDAsqW27D65pcfF+XKz3X3mua6w73BzVeReQ8AQcjDo20a7BZMlzEn+MWwLpPNrLEBcW68KgCiveyNQOAcr8cIYCdvAdp7Xp59NKE1AJC5o8PsqC4jeDS7RwJlw5lydDhORa3RarWYeI9RLFuLNFSiXxd2IZezZaPVS3u4UqZ5dwj5TQMipDt9JkgecWn6ur/bE0F6QOSovEZ439kdIAXCbzKsj4Qd1ztn3dZGicaDLW0kYxtcA8877N6ZkwLhHs+jb9R0a6uWbDzuDbXSH1wEuwULtvMmxE5q0rmcQzS204Na8kAA+VwZM0k85Vzi0cHdXaD+2Ck4dc6VxsXA+YoccSpdID5Nx/1j+301nWQJmk2o0PDDyr9YMxGQE2UxUj9B3epDhIFsQXMKRZcQzgiQPSNwnvI0B6qe5vzBfyt/ANNqXSID0K9pAAAAAElFTkSuQmCC" alt="score" width="20">
           <span class="fw-normal fs-8">10,000點</span>
         </div>
       </div>
+
+      </div>
     </div>
   </div>
 
-  <div class="container bottom-padding-home-member">
+  <div class="container">
 
     <!-- 我的帳號與方案 -->
     <div class="d-flex flex-column align-items-center mb-4">
@@ -1168,7 +1178,7 @@
       <div class="row text-center">
         <!-- 任務集點 -->
         <div class="col">
-          <div class="d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-items-center justify-content-center">
             <div class="d-flex align-items-center gap-1 mb-1">
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAM3SURBVHgB3VU/TBNhFH/f9a7XhtJWJVpMQDC4mYhxVKNxZIJEioNKmZxEXHWgTA4OIm4Otuii1kSc2AyTqwxuJAISLQKSUgu0d9d7vvddW3pcC4mbvqT9vn7ve+/3e9/7U4B/XcRBykQKo+VQKaGg7wpd7QWBXVKBME/fSzbgh1dxf/qvAG6+sfp9CqZoG4WDBJGAYKIZUEOA4Yz5hJYx3m/lLPi1bsLmhgWloi31LSGf/HR266AHFAcHIPlyUJs4FOB2xhynw6RlIawslSD73YCWsArBkAY+1bluGjZYRhkKORNOxPzQQUAq62yYnB7S7jcFuPXWSChCpNj5l8/bdF9A+KgfhNL4JW0bCcQAQevZ8y0SRNhiID2kzlTvKPUGCijjvDJzIKeRNr2pc3lfYQK6JLKyWHKeivLGxeEBYPZcJUV6559ZE0JRv8dhz3EBvR2K57yVosz+MGS+SKLlYClR1anVjQDsB8mkSM41F/NYWMDUDT+0R5yz7BbC6GsDVvNYi4TzxMUQiapse5WOJ10RCKGc4nW7YIPmd7McuUhG5LtvqgTx5yXpOH5Bdd0JhlRZaQ5Zcc4TAUmvA1CG1jY3APMO6QCXehRYWLcl+/3iU5VaGRObrkYATSX1yYJYRIMHfZr8zU/0cMaAhTU81LZGFRGXedUDAsqW27D65pcfF+XKz3X3mua6w73BzVeReQ8AQcjDo20a7BZMlzEn+MWwLpPNrLEBcW68KgCiveyNQOAcr8cIYCdvAdp7Xp59NKE1AJC5o8PsqC4jeDS7RwJlw5lydDhORa3RarWYeI9RLFuLNFSiXxd2IZezZaPVS3u4UqZ5dwj5TQMipDt9JkgecWn6ur/bE0F6QOSovEZ439kdIAXCbzKsj4Qd1ztn3dZGicaDLW0kYxtcA8877N6ZkwLhHs+jb9R0a6uWbDzuDbXSH1wEuwULtvMmxE5q0rmcQzS204Na8kAA+VwZM0k85Vzi0cHdXaD+2Ck4dc6VxsXA+YoccSpdID5Nx/1j+301nWQJmk2o0PDDyr9YMxGQE2UxUj9B3epDhIFsQXMKRZcQzgiQPSNwnvI0B6qe5vzBfyt/ANNqXSID0K9pAAAAAElFTkSuQmCC" alt="score" width="20">
               <span class="fw-normal fs-8 text-white">任務集點</span>
@@ -1178,7 +1188,7 @@
         </div>
 
         <!-- 灰線分隔 -->
-        <div class="d-flex align-items-start py-1" style="width:1px;">
+        <div class="d-flex align-items-start py-1 px-0" style="width:1px;">
           <div class="border-start border-netural-500 opacity-50" style="height:40px;"></div>
         </div>
 
@@ -1196,10 +1206,16 @@
       </div>
     </div>
 
+    
+
+  </div>
+  
+  <div class="container pe-0">
+
     <!-- 繼續複習 -->
     <div class="mb-8">
-      <div class="d-flex justify-content-between align-items-center mb-5"> 
-        <h6 class="fw-normal text-white mb-0">繼續複習</h6>
+      <div class="d-flex justify-content-between align-items-center mb-5 me-6"> 
+        <h6 class="fw-normal text-white mb-0 letter-spacing-title">繼續觀看</h6>
         <a href="#" class="d-flex align-items-center text-white text-decoration-none small">
           <span class="fw-normal">更多</span>
           <span class="material-icons-outlined">chevron_right</span>
@@ -1208,7 +1224,7 @@
       <!-- 影片輪播 (水平捲動) -->
       <div class="d-flex overflow-auto pb-2">
         <!-- 卡片  -->
-        <div class="card bg-card text-white border-0 rounded-2 me-5 overflow-hidden" style="width: 149px; flex-shrink: 0;">
+        <div class="card bg-card text-white border-0 rounded-2 me-5 overflow-hidden bg-tertiary-900" style="width: 149px; flex-shrink: 0;">
           <div class="position-relative" style="height: 90px;">
             <img src="/AAPD-StreamLish/assets/friends8-DR28953w.png" class="w-100 h-100 object-fit-cover" alt="friends">
             <div class="carousel-gradient-card"></div><!-- 底部黑色漸層遮罩 -->
@@ -1217,7 +1233,7 @@
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
             </div>
             <!-- 播放進度時間 -->
-            <span class="badge position-absolute bottom-0 start-0">S3:E8</span>
+            <span class="badge position-absolute bottom-0 start-0  fs-12">S3:E8</span>
           </div>
           <!-- 進度條 -->
           <div class="progress bg-tertiary-400" style="height: 2px;">
@@ -1229,16 +1245,16 @@
             <span class="material-icons-outlined small">chevron_right</span>
           </div>
         </div>
-
+  
         <!-- 卡片  -->
-        <div class="card bg-card text-white border-0 rounded-2 me-5 overflow-hidden" style="width: 149px; flex-shrink: 0;">
+        <div class="card bg-card text-white border-0 rounded-2 me-5 overflow-hidden bg-tertiary-900" style="width: 149px; flex-shrink: 0;">
           <div class="position-relative" style="height: 90px;">
             <img src="/AAPD-StreamLish/assets/the%20danish%20girl-BCmBR9xy.jpg" class="w-100 h-100 object-fit-cover" alt="the danish girl">
             <div class="carousel-gradient-card"></div><!-- 底部黑色漸層遮罩 -->
             <div class="position-absolute top-50 start-50 translate-middle">
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
             </div>
-            <span class="badge position-absolute bottom-0 start-0">S3:E8</span>
+            <span class="badge position-absolute bottom-0 start-0  fs-12">S3:E8</span>
           </div>
           <div class="progress bg-tertiary-400" style="height: 2px;">
             <div class="progress-bar bg-white" role="progressbar" style="width: 20%;"></div>
@@ -1248,16 +1264,16 @@
             <span class="material-icons-outlined small">chevron_right</span>
           </div>
         </div>
-
+  
         <!-- 卡片 -->
-        <div class="card bg-card text-white border-0 rounded-2 me-5 overflow-hidden" style="width: 149px; flex-shrink: 0;">
+        <div class="card bg-card text-white border-0 rounded-2 me-5 overflow-hidden bg-tertiary-900" style="width: 149px; flex-shrink: 0;">
           <div class="position-relative" style="height: 90px;">
             <img src="/AAPD-StreamLish/assets/fantastic%20beasts-CZFOmQEE.jpg" class="w-100 h-100 object-fit-cover" alt="fantastic beasts">
             <div class="carousel-gradient-card"></div><!-- 底部黑色漸層遮罩 -->
             <div class="position-absolute top-50 start-50 translate-middle">
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKcSURBVHgBxVdNaxNRFD0TY0QxUChU0pUruxRa981W0IUKheq++QH2b/gD7A+ooJhNFy5tNu4igm7sDzAoFoSI0tI0Paf3TjsNk86bj9ADhyEf8+6597533nsRAjEej5t8tMllcolskU3/eUgOyO9kn+xFUTQMGTfK+gMDL/KxTj4kr5F/yL/kIXnkf6uTN50SNUfukFsUMigkwDPeINfIX84jhOEGOe9870KGwQI869ewjAc5AqcJUasOyE5aNaKU4Pf4eEWOyJ+oBguwZDYpYm+qgETm6u9vVAu1o4GJSkSJ4Or5NqrNfBJxJV7Ec6KW+HHDFc4quKCJXPdYOBPgpX8Gm3Czxg9yjTFbZwJc0T5stmah4SyKuMXP9SHy3n8kvwUKWPenHG8PxaB5cJd8ogq0Ye4WElxoOtsu5jbyY+QiViVgBeblRSAhKuUy8kNJr0iAjOc/yuEBrBrzOd5R0ksSoNn4D+WhamglrSKsLTK7Vs1fHKE6aKt+jOyVopjNGq4YciX1QjOyqip8JT/DSnwZFHMoAXI/bZtl54ES6cGcLgQ6vAwkQGZyv4QA+YdMrJ/vNdwiv9T8xTkUg6rXRf7ggiZ/XwJ2ce5MIVCplfUn2LmviIlphSjpXl37MveDD7D1G7Ibdv0Zat1pkGHtKHa8DN+QdxBWhQOUC95wAVv6cCqASjRz38JccdZQjG58LEsakRQdw45Ns4LGPvRYuCDAz2gdmDnl2VRCoTHV4k7yjnDBir0VL2HGVGUlNJZ6vzl5N8i6mFyHrYwsW50GZayea5mHXUwSIuKr2VPYeXE/hxAFXnC+Q96r2YSQRRfyCHaK0UCybR1iRomAKnF8MdX38pbtwpfTFCHxOVBHOJ2ipl3PtRPuhl7PTwARJbr7zwJ1PAAAAABJRU5ErkJggg==" alt="camera" width="32" height="32">
             </div>
-            <span class="badge position-absolute bottom-0 start-0">S3:E8</span>
+            <span class="badge position-absolute bottom-0 start-0  fs-12">S3:E8</span>
           </div>
           <div class="progress bg-tertiary-400" style="height: 2px;">
             <div class="progress-bar bg-white" role="progressbar" style="width: 20%;"></div>
@@ -1270,11 +1286,11 @@
       </div>
       
     </div>
-
-    <!-- 時事單字熱門片段 -->
+  
+    <!-- 歷史紀錄 -->
     <div class="mb-8">
-      <div class="d-flex justify-content-between align-items-center mb-5"> 
-        <h6 class="fw-normal text-white mb-0">時事單字熱門片段</h6>
+      <div class="d-flex justify-content-between align-items-center mb-5 me-6"> 
+        <h6 class="fw-normal text-white mb-0 letter-spacing-title">歷史紀錄</h6>
         <a href="#" class="d-flex align-items-center text-white text-decoration-none small">
           <span class="fw-normal">更多</span>
           <span class="material-icons-outlined">chevron_right</span>
@@ -1283,7 +1299,7 @@
       <!-- 影片輪播 (水平捲動) -->
       <div class="d-flex overflow-auto pb-2 fw-light">
     
-
+  
         <!-- 卡片 -->
         <div class="card bg-transparent text-white border-0 rounded-2 me-5 overflow-hidden" style="width: 90px; flex-shrink: 0;">
           <div class="position-relative mb-1" style="height: 130px;">
@@ -1293,7 +1309,7 @@
             <span class="fs-10">2012</span>
           </div>
         </div>
-
+  
         <!-- 卡片 -->
         <div class="card bg-transparent text-white border-0 rounded-2 me-5 overflow-hidden" style="width: 90px; flex-shrink: 0;">
           <div class="position-relative mb-1" style="height: 130px;">
@@ -1303,7 +1319,7 @@
             <span class="fs-10">Kpop獵魔女團</span>
           </div>
         </div>
-
+  
         <!-- 卡片 -->
         <div class="card bg-transparent text-white border-0 rounded-2 me-5 overflow-hidden" style="width: 90px; flex-shrink: 0;">
           <div class="position-relative mb-1" style="height: 130px;">
@@ -1313,7 +1329,7 @@
             <span class="fs-10">ColdPlay紀錄片</span>
           </div>
         </div>
-
+  
         <!-- 卡片 -->
         <div class="card bg-transparent text-white border-0 rounded-2 me-5 overflow-hidden" style="width: 90px; flex-shrink: 0;">
           <div class="position-relative mb-1" style="height: 130px;">
@@ -1325,55 +1341,53 @@
         </div>
       </div>
     </div>
-
-    <!-- 功能管理 -->
-    <div>
-      <h6 class="fw-normal text-white mb-6">功能管理</h6>
-
-      <!-- 個人資料 -->
-      <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
-        <span class="fs-9">個人資料</span>
-        <a href="#">
-          <span class="material-icons-outlined fs-6">chevron_right</span>
-        </a>
-      </div>
-      <!-- 灰線 -->
-      <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
-
-      <!-- 相關設定 -->
-      <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
-        <span class="fs-9">相關設定</span>
-        <a href="#">
-          <span class="material-icons-outlined fs-6">chevron_right</span>
-        </a>
-      </div>
-      <!-- 灰線 -->
-      <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
-
-      <!-- 幫助中心 -->
-      <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
-        <span class="fs-9">幫助中心</span>
-        <a href="#">
-          <span class="material-icons-outlined fs-6">chevron_right</span>
-        </a>
-      </div>
-      <!-- 灰線 -->
-      <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
-
-      <!-- 訊息通知 -->
-      <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
-        <span class="fs-9">訊息通知</span>
-        <a href="#">
-          <span class="material-icons-outlined fs-6">chevron_right</span>
-        </a>
-      </div>
-      <!-- 灰線 -->
-      <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
-
-    </div>
-    
   </div>
+  
+  <!-- 功能管理 -->
+  <div class="container bottom-padding-home-member">
+    <h6 class="fw-normal text-white mb-6">功能管理</h6>
 
+    <!-- 個人資料 -->
+    <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
+      <span class="fs-9">個人資料</span>
+      <a href="#">
+        <span class="material-icons-outlined fs-6">chevron_right</span>
+      </a>
+    </div>
+    <!-- 灰線 -->
+    <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
+
+    <!-- 相關設定 -->
+    <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
+      <span class="fs-9">相關設定</span>
+      <a href="#">
+        <span class="material-icons-outlined fs-6">chevron_right</span>
+      </a>
+    </div>
+    <!-- 灰線 -->
+    <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
+
+    <!-- 幫助中心 -->
+    <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
+      <span class="fs-9">幫助中心</span>
+      <a href="#">
+        <span class="material-icons-outlined fs-6">chevron_right</span>
+      </a>
+    </div>
+    <!-- 灰線 -->
+    <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
+
+    <!-- 訊息通知 -->
+    <div class="d-flex justify-content-between align-items-center text-white mb-3 fw-light"> 
+      <span class="fs-9">訊息通知</span>
+      <a href="#">
+        <span class="material-icons-outlined fs-6">chevron_right</span>
+      </a>
+    </div>
+    <!-- 灰線 -->
+    <div class="border-bottom border-netural-500 opacity-50 border-1 mb-3"></div>
+
+  </div>
 
 
   </body>    </div>
@@ -1391,7 +1405,7 @@
     <li class="nav-item flex-fill text-center">
       <a class="nav-link nav-link-border-none active d-flex flex-column align-items-center py-1 outer-margin-left" data-bs-toggle="pill" href="#home" style="height: 54px;">
         <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20%2011.3997V19.8C20%2019.9856%2019.9298%2020.1637%2019.8047%2020.295C19.6797%2020.4262%2019.5101%2020.5%2019.3333%2020.5H14.6667C14.4899%2020.5%2014.3203%2020.4262%2014.1953%2020.295C14.0702%2020.1637%2014%2019.9856%2014%2019.8V15.2498C14%2015.157%2013.9649%2015.0679%2013.9024%2015.0023C13.8399%2014.9367%2013.7551%2014.8998%2013.6667%2014.8998H10.3333C10.2449%2014.8998%2010.1601%2014.9367%2010.0976%2015.0023C10.0351%2015.0679%2010%2015.157%2010%2015.2498V19.8C10%2019.9856%209.92976%2020.1637%209.80474%2020.295C9.67971%2020.4262%209.51014%2020.5%209.33333%2020.5H4.66667C4.48986%2020.5%204.32029%2020.4262%204.19526%2020.295C4.07024%2020.1637%204%2019.9856%204%2019.8V11.3997C4.00016%2011.0284%204.14075%2010.6724%204.39083%2010.41L11.0575%203.40974C11.3075%203.14738%2011.6465%203%2012%203C12.3535%203%2012.6925%203.14738%2012.9425%203.40974L19.6092%2010.41C19.8593%2010.6724%2019.9998%2011.0284%2020%2011.3997Z'%20fill='white'/%3e%3c/svg%3e" class="icon" alt="首頁">
-        <small>首頁</small>
+        <small class="fs-10">首頁</small>
       </a>
     </li>
 
@@ -1399,7 +1413,7 @@
     <li class="nav-item flex-fill text-center">
       <a class="nav-link nav-link-border-none d-flex flex-column align-items-center py-1 inter-margin-left" data-bs-toggle="pill" href="#word" style="height: 54px;">
         <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M21.0775%203.94891C20.9739%203.45611%2020.5663%203.07471%2020.0591%203.01049C20.0093%203.00393%2019.9595%203%2019.9084%203H11.8571C11.8125%203%2011.7679%203%2011.7234%203H5.5607C4.90144%203%204.3667%203.53475%204.3667%204.194V18.2193L4.46762%2017.7802C4.773%2016.6583%205.73895%2015.7946%206.89232%2015.6137C7.17673%2015.6071%207.46245%2015.6032%207.74818%2015.598H19.9084C20.0106%2015.598%2020.1102%2015.5836%2020.2046%2015.5586C20.7118%2015.4289%2021.088%2014.9754%2021.1011%2014.4302C21.1011%2014.421%2021.1024%2014.4118%2021.1024%2014.4027V4.194C21.1024%204.11012%2021.0932%204.02755%2021.0762%203.9476L21.0775%203.94891ZM14.9856%209.60961L11.3092%2011.9727C11.1401%2012.0658%2010.9763%2011.9976%2010.9213%2011.8154L10.9055%207.06433C10.9199%206.95423%2010.9737%206.82054%2011.093%206.79433C11.1323%206.78516%2011.1729%206.78254%2011.2135%206.78778L14.9856%209.18758C15.1232%209.29505%2015.1232%209.50213%2014.9856%209.60961Z'%20fill='white'/%3e%3cpath%20d='M9.10938%2022.0781C9.10938%2022.1633%209.19981%2022.2171%209.27452%2022.1751L10.1631%2021.685C10.2745%2021.6234%2010.4095%2021.6234%2010.5209%2021.685L11.4096%2022.1738C11.4843%2022.2145%2011.5747%2022.1607%2011.5747%2022.0755V19.0001L9.10938%2019.0001V22.0768V22.0781Z'%20fill='white'/%3e%3cpath%20d='M5.49609%2018.5355C5.49609%2019.5552%206.32311%2020.3822%207.3428%2020.3822H7.99288V19.0951H7.36246C7.05446%2019.0951%206.80412%2018.8448%206.80412%2018.5368C6.80412%2018.2288%207.05446%2017.9785%207.36246%2017.9785H19.2225C19.3287%2017.4857%2019.5672%2017.0427%2019.9028%2016.6914H7.3428C6.32311%2016.6914%205.49609%2017.5184%205.49609%2018.5381V18.5355Z'%20fill='white'/%3e%3cpath%20d='M18.9171%2019H12.6929V20.2871H19.9028C19.5659%2019.9358%2019.3274%2019.4928%2019.2225%2019H18.9185H18.9171Z'%20fill='white'/%3e%3c/svg%3e" class="icon" alt="收藏">
-        <small>收藏</small>
+        <small class="fs-10">收藏</small>
       </a>
     </li>
 
@@ -1407,15 +1421,15 @@
     <li class="nav-item flex-fill text-center">
       <a class="nav-link nav-link-border-none  d-flex flex-column align-items-center py-1  inter-margin-left" data-bs-toggle="pill" href="#search" style="height: 54px;">
         <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_21506_13489)'%3e%3cpath%20d='M15.8336%2014.0006H15.0436L14.7636%2013.7306C15.9636%2012.3306%2016.5836%2010.4206%2016.2436%208.39063C15.7736%205.61063%2013.4536%203.39063%2010.6536%203.05063C6.42363%202.53063%202.86363%206.09063%203.38363%2010.3206C3.72363%2013.1206%205.94363%2015.4406%208.72363%2015.9106C10.7536%2016.2506%2012.6636%2015.6306%2014.0636%2014.4306L14.3336%2014.7106V15.5006L18.5836%2019.7506C18.9936%2020.1606%2019.6636%2020.1606%2020.0736%2019.7506C20.4836%2019.3406%2020.4836%2018.6706%2020.0736%2018.2606L15.8336%2014.0006ZM9.83363%2014.0006C7.34363%2014.0006%205.33363%2011.9906%205.33363%209.50063C5.33363%207.01063%207.34363%205.00063%209.83363%205.00063C12.3236%205.00063%2014.3336%207.01063%2014.3336%209.50063C14.3336%2011.9906%2012.3236%2014.0006%209.83363%2014.0006Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_21506_13489'%3e%3crect%20width='24'%20height='24'%20fill='white'%20transform='translate(0.333496)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="icon" alt="搜尋">
-        <small>搜尋</small>
+        <small class="fs-10">搜尋</small>
       </a>
     </li>
 
     <!-- 會員 -->
     <li class="nav-item flex-fill text-center">
       <a class="nav-link nav-link-border-none  d-flex flex-column align-items-center py-1 inter-margin-left outer-margin-right" data-bs-toggle="pill" href="#member" style="height: 54px;">
-        <img src="/AAPD-StreamLish/assets/profile-girl-3U3ulV6z.png" class="rounded-circle" width="24" height="24" alt="會員">
-        <small class="fw-normal">會員</small>
+        <img src="/AAPD-StreamLish/assets/profile-girl-3U3ulV6z.png" class="rounded-circle" width="24" height="24" alt="會員" style="margin-bottom: 2px;">
+        <small class="fs-10">會員</small>
       </a>
     </li>
 
