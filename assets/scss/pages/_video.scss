@@ -371,6 +371,13 @@
     visibility: visible;
   }
 }
+.video-js-mask {
+  .video-js::before {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+  }
+}
 
 // 收藏單字
 .word-define {
